@@ -1,6 +1,6 @@
 # Uncertainty in Inspect Evals: are the error bars computed over independent samples?
 
-Most Inspect Evals tasks report `stderr()`, which assumes every sample is independent. Many datasets
+Of the 126 Inspect Evals tasks we could build, 87 report a plain `stderr()`, which assumes every sample is independent. Many datasets
 violate that: several questions share a passage, an image, a scenario or a problem sheet, or the design
 is crossed (e.g. user task × injection task). In those cases the plain standard error is too small.
 Point estimates are unchanged; only the stated uncertainty is wrong. This matters most for model
@@ -11,12 +11,13 @@ This repo is the working hub for that question. Discussion and the proposal live
 
 ## Workstreams
 
-| workstream | who | where |
-|---|---|---|
-| Census: which tasks report plain `stderr()` over clustered samples | [@raina-sid](https://github.com/raina-sid) | [`census/`](census/) |
-| Effect sizes on real runs (lingoly_too, agie_lsat_rc) | [@raina-sid](https://github.com/raina-sid) | [`effect-size/`](effect-size/) |
-| AgentDojo: two-way clustering, pigeonhole bootstrap, coverage study; cyse2/cyse3 | [@couldbeme](https://github.com/couldbeme) | [couldbeme/agentdojo-two-way](https://github.com/couldbeme/agentdojo-two-way) |
-| BBQ: shared-scenario structure and its effect on uncertainty | [@GBX-Max1220](https://github.com/GBX-Max1220) | coordination issue in this repo |
+| workstream | who | status | where |
+|---|---|---|---|
+| Census: which tasks report plain `stderr()` over clustered samples | [@raina-sid](https://github.com/raina-sid) | done for 170/250 tasks | [`census/`](census/) |
+| Effect sizes on real runs (lingoly_too, agie_lsat_rc, agentdojo one-way) | [@raina-sid](https://github.com/raina-sid) | done | [`effect-size/`](effect-size/) |
+| AgentDojo: two-way clustering, pigeonhole bootstrap, coverage study | [@couldbeme](https://github.com/couldbeme) | done | [couldbeme/agentdojo-two-way](https://github.com/couldbeme/agentdojo-two-way) |
+| cyse2 / cyse3 crossed designs | [@couldbeme](https://github.com/couldbeme) | planned | — |
+| BBQ: shared-scenario structure and its effect on uncertainty | [@GBX-Max1220](https://github.com/GBX-Max1220) | in progress | [#1](../../issues/1) |
 
 Coordination happens in this repo's issues. Each person's work stays in whichever repo they prefer.
 
@@ -33,10 +34,10 @@ no missed clusters.
 | task | clustered / plain SE |
 |---|---|
 | lingoly_too | 2.89× |
-| agentdojo (one-way, upstream released runs) | 2.51–2.68× |
+| agentdojo, one-way (upstream released runs; [`agentdojo_oneway.py`](effect-size/agentdojo_oneway.py)) | 2.51–2.68× |
 | agie_lsat_rc (model near ceiling) | 1.10× |
 
-Two-way results for AgentDojo are in couldbeme's repo.
+Two-way (CGM) on the same AgentDojo runs gives 2.71× (attack success) and 2.84× (utility) with the same script; couldbeme's repo covers all 28 pipelines plus coverage.
 
 **Known limitation of the census signal.** Shared contexts were detected from text blocks of ≥200
 characters. That undercounted BBQ, whose contexts are short; the corrected row is in the results. Other
@@ -56,6 +57,8 @@ python flag.py            # reads stage12.jsonl, writes stage3a_flags.json
 cd ..
 # effect size on any .eval log (KEY = a metadata field, or 'passage')
 python effect-size/se_ratio.py <log.eval> <KEY>
+# AgentDojo one-way and two-way SE from the upstream released runs (agentdojo @ 089ed46)
+python effect-size/agentdojo_oneway.py <agentdojo>/runs/claude-3-7-sonnet-20250219
 ```
 
 The census protocol, with its definitions and quoting rules, is in [`census/PROTOCOL.md`](census/PROTOCOL.md).
@@ -63,5 +66,5 @@ Note: "v1" in these files refers to an earlier, code-reading pass that is not in
 
 ---
 
-_AI assistance: code and docs were drafted with an AI coding assistant (Claude). Every figure comes from
-the scripts in this repo or the linked runs._
+_AI assistance: code and docs were drafted with an AI coding assistant (Claude). Every figure is reproducible
+with the scripts in this repo; the `.eval` logs of the gpt-5.6-luna runs are not included but are available on request._

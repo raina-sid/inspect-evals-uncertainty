@@ -70,7 +70,7 @@ across 244 samples, so none are shared.
 - vqa_rad: 451 questions over 203 images;
 - zerobench_subquestions.
 
-**Effect size measured so far:** AgentDojo only, from the released per-sample runs. Attack-success SE is
-2.51× when clustered by injection task; utility SE is 2.68× when clustered by user task.
+**Effect sizes:** see [`../effect-size/RESULTS.md`](../effect-size/RESULTS.md) (lingoly_too 2.89×, agie_lsat_rc 1.10×) and
+[`../effect-size/agentdojo_oneway.py`](../effect-size/agentdojo_oneway.py) (AgentDojo 2.51–2.68× one-way).
 
 _Corrected 2026-10-12: the BBQ row originally counted only contexts of 200+ characters (29,088). Grouping on the full scenario text (verified at `12d04e0`), every sample is clustered: 14,102 scenarios, each ambiguous context plus its disambiguations, max 20._
