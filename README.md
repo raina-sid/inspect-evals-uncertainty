@@ -17,7 +17,7 @@ This repo is the working hub for that question. Discussion and the proposal live
 | Effect sizes on real runs (lingoly_too, agie_lsat_rc, agentdojo one-way) | [@raina-sid](https://github.com/raina-sid) | done | [`effect-size/`](effect-size/) |
 | AgentDojo: two-way clustering, pigeonhole bootstrap, coverage study | [@couldbeme](https://github.com/couldbeme) | done | [couldbeme/agentdojo-two-way](https://github.com/couldbeme/agentdojo-two-way) |
 | cyse2 / cyse3 crossed designs | [@couldbeme](https://github.com/couldbeme) | planned | — |
-| BBQ: shared-scenario structure and its effect on uncertainty | [@GBX-Max1220](https://github.com/GBX-Max1220) | in progress | [#1](../../issues/1) |
+| BBQ: shared-scenario structure and its effect on uncertainty | [@GBX-Max1220](https://github.com/GBX-Max1220) | in progress | [#1](https://github.com/raina-sid/inspect-evals-uncertainty/issues/1) |
 
 Coordination happens in this repo's issues. Each person's work stays in whichever repo they prefer.
 
