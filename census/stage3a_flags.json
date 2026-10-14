@@ -1,0 +1,652 @@
+[
+ {
+  "task": "inspect_evals/agent_bench_os",
+  "n": 119,
+  "epochs": "None",
+  "flags": [
+   "identical inputs (1 repeated, max 2)"
+  ]
+ },
+ {
+  "task": "inspect_evals/agent_threat_bench_autonomy_hijack",
+  "n": 6,
+  "epochs": "None",
+  "flags": [
+   "identical inputs (1 repeated, max 6)"
+  ]
+ },
+ {
+  "task": "inspect_evals/agent_threat_bench_data_exfil",
+  "n": 8,
+  "epochs": "None",
+  "flags": []
+ },
+ {
+  "task": "inspect_evals/agent_threat_bench_memory_poison",
+  "n": 10,
+  "epochs": "None",
+  "flags": []
+ },
+ {
+  "task": "inspect_evals/agentdojo",
+  "n": 1014,
+  "epochs": "None",
+  "flags": [
+   "shared text block (43 blocks repeated, max 15)",
+   "identical inputs (98 repeated, max 15)",
+   "meta[task_id] (42 values, max 36, 42 repeated)",
+   "id prefix (98 prefixes, max 15)"
+  ]
+ },
+ {
+  "task": "inspect_evals/agentic_misalignment",
+  "n": 1,
+  "epochs": "None",
+  "flags": []
+ },
+ {
+  "task": "inspect_evals/agie_aqua_rat",
+  "n": 254,
+  "epochs": "None",
+  "flags": []
+ },
+ {
+  "task": "inspect_evals/agie_logiqa_en",
+  "n": 651,
+  "epochs": "None",
+  "flags": [
+   "shared text block (37 blocks repeated, max 5)",
+   "identical inputs (1 repeated, max 2)"
+  ]
+ },
+ {
+  "task": "inspect_evals/agie_lsat_ar",
+  "n": 230,
+  "epochs": "None",
+  "flags": [
+   "shared text block (40 blocks repeated, max 7)",
+   "identical inputs (4 repeated, max 3)"
+  ]
+ },
+ {
+  "task": "inspect_evals/agie_lsat_lr",
+  "n": 510,
+  "epochs": "None",
+  "flags": [
+   "shared text block (3 blocks repeated, max 2)"
+  ]
+ },
+ {
+  "task": "inspect_evals/agie_lsat_rc",
+  "n": 269,
+  "epochs": "None",
+  "flags": [
+   "shared text block (40 blocks repeated, max 8)",
+   "identical inputs (3 repeated, max 2)"
+  ]
+ },
+ {
+  "task": "inspect_evals/agie_math",
+  "n": 1000,
+  "epochs": "None",
+  "flags": []
+ },
+ {
+  "task": "inspect_evals/agie_sat_en",
+  "n": 206,
+  "epochs": "None",
+  "flags": [
+   "shared text block (44 blocks repeated, max 7)",
+   "identical inputs (1 repeated, max 2)"
+  ]
+ },
+ {
+  "task": "inspect_evals/agie_sat_en_without_passage",
+  "n": 206,
+  "epochs": "None",
+  "flags": [
+   "identical inputs (5 repeated, max 7)"
+  ]
+ },
+ {
+  "task": "inspect_evals/agie_sat_math",
+  "n": 220,
+  "epochs": "None",
+  "flags": [
+   "shared text block (6 blocks repeated, max 3)"
+  ]
+ },
+ {
+  "task": "inspect_evals/aime2024",
+  "n": 30,
+  "epochs": "None",
+  "flags": []
+ },
+ {
+  "task": "inspect_evals/aime2025",
+  "n": 30,
+  "epochs": "None",
+  "flags": []
+ },
+ {
+  "task": "inspect_evals/aime2026",
+  "n": 30,
+  "epochs": "None",
+  "flags": []
+ },
+ {
+  "task": "inspect_evals/apps",
+  "n": 3000,
+  "epochs": "1",
+  "flags": [
+   "shared text block (13 blocks repeated, max 3)",
+   "meta[test_list_str] (2991 values, max 2, 9 repeated)"
+  ]
+ },
+ {
+  "task": "inspect_evals/arc_challenge",
+  "n": 1172,
+  "epochs": "None",
+  "flags": [
+   "identical inputs (2 repeated, max 2)"
+  ]
+ },
+ {
+  "task": "inspect_evals/arc_easy",
+  "n": 2376,
+  "epochs": "None",
+  "flags": [
+   "identical inputs (5 repeated, max 2)"
+  ]
+ },
+ {
+  "task": "inspect_evals/bbh",
+  "n": 6509,
+  "epochs": "None",
+  "flags": [
+   "shared text block (97 blocks repeated, max 507)",
+   "identical inputs (294 repeated, max 250)"
+  ]
+ },
+ {
+  "task": "inspect_evals/bbq",
+  "n": 58492,
+  "epochs": "None",
+  "flags": [
+   "shared text block (14118 blocks repeated, max 10)",
+   "identical inputs (978 repeated, max 5)",
+   "meta[source_id] (15960 values, max 11, 11160 repeated)"
+  ]
+ },
+ {
+  "task": "inspect_evals/bfcl",
+  "n": 4981,
+  "epochs": "None",
+  "flags": [
+   "shared text block (14 blocks repeated, max 3)",
+   "identical inputs (184 repeated, max 1000)"
+  ]
+ },
+ {
+  "task": "inspect_evals/boolq",
+  "n": 3270,
+  "epochs": "None",
+  "flags": [
+   "shared text block (233 blocks repeated, max 9)"
+  ]
+ },
+ {
+  "task": "inspect_evals/chembench",
+  "n": 2785,
+  "epochs": "None",
+  "flags": [
+   "shared text block (1 blocks repeated, max 1000)",
+   "identical inputs (11 repeated, max 1000)"
+  ]
+ },
+ {
+  "task": "inspect_evals/commonsense_qa",
+  "n": 1221,
+  "epochs": "None",
+  "flags": [
+   "meta[question_concept] (785 values, max 35, 231 repeated)"
+  ]
+ },
+ {
+  "task": "inspect_evals/compute_eval",
+  "n": 406,
+  "epochs": "None",
+  "flags": [
+   "shared text block (22 blocks repeated, max 133)"
+  ]
+ },
+ {
+  "task": "inspect_evals/cybermetric_10000",
+  "n": 10180,
+  "epochs": "None",
+  "flags": []
+ },
+ {
+  "task": "inspect_evals/cybermetric_2000",
+  "n": 2000,
+  "epochs": "None",
+  "flags": []
+ },
+ {
+  "task": "inspect_evals/cybermetric_500",
+  "n": 500,
+  "epochs": "None",
+  "flags": []
+ },
+ {
+  "task": "inspect_evals/cybermetric_80",
+  "n": 80,
+  "epochs": "None",
+  "flags": []
+ },
+ {
+  "task": "inspect_evals/cyse2_interpreter_abuse",
+  "n": 489,
+  "epochs": "4",
+  "flags": []
+ },
+ {
+  "task": "inspect_evals/cyse2_prompt_injection",
+  "n": 250,
+  "epochs": "4",
+  "flags": [
+   "identical inputs (5 repeated, max 2)",
+   "meta[test_case_prompt] (123 values, max 48, 34 repeated)",
+   "meta[judge_question] (147 values, max 8, 42 repeated)",
+   "meta[injection_variant] (15 values, max 32, 15 repeated)"
+  ]
+ },
+ {
+  "task": "inspect_evals/cyse3_visual_prompt_injection",
+  "n": 1000,
+  "epochs": "5",
+  "flags": [
+   "identical inputs (219 repeated, max 14)",
+   "meta[judge_question] (733 values, max 12, 196 repeated)"
+  ]
+ },
+ {
+  "task": "inspect_evals/cyse4_malware_analysis",
+  "n": 609,
+  "epochs": "None",
+  "flags": [
+   "shared text block (135 blocks repeated, max 10)",
+   "meta[sha256] (175 values, max 10, 135 repeated)",
+   "meta[report_chars] (174 values, max 10, 135 repeated)"
+  ]
+ },
+ {
+  "task": "inspect_evals/frontier_cs",
+  "n": 211,
+  "epochs": "None",
+  "flags": [
+   "shared text block (8 blocks repeated, max 12)"
+  ]
+ },
+ {
+  "task": "inspect_evals/frontier_cs_algorithmic",
+  "n": 172,
+  "epochs": "None",
+  "flags": [
+   "shared text block (4 blocks repeated, max 5)"
+  ]
+ },
+ {
+  "task": "inspect_evals/frontier_cs_research",
+  "n": 39,
+  "epochs": "None",
+  "flags": [
+   "shared text block (4 blocks repeated, max 12)"
+  ]
+ },
+ {
+  "task": "inspect_evals/frontierscience",
+  "n": 160,
+  "epochs": "None",
+  "flags": [
+   "shared text block (2 blocks repeated, max 25)",
+   "identical inputs (1 repeated, max 2)"
+  ]
+ },
+ {
+  "task": "inspect_evals/gdm_in_house_ctf",
+  "n": 13,
+  "epochs": "10",
+  "flags": [
+   "identical inputs (2 repeated, max 4)"
+  ]
+ },
+ {
+  "task": "inspect_evals/gdm_intercode_ctf",
+  "n": 78,
+  "epochs": "None",
+  "flags": [
+   "shared text block (2 blocks repeated, max 2)",
+   "identical inputs (4 repeated, max 3)"
+  ]
+ },
+ {
+  "task": "inspect_evals/gdm_oversight_pattern",
+  "n": 2,
+  "epochs": "10",
+  "flags": []
+ },
+ {
+  "task": "inspect_evals/gdm_self_reasoning_approved_directories",
+  "n": 2,
+  "epochs": "10",
+  "flags": []
+ },
+ {
+  "task": "inspect_evals/gdm_self_reasoning_calculator_improvement",
+  "n": 2,
+  "epochs": "10",
+  "flags": []
+ },
+ {
+  "task": "inspect_evals/gdm_self_reasoning_context_length_mod_instrumental_only",
+  "n": 2,
+  "epochs": "10",
+  "flags": []
+ },
+ {
+  "task": "inspect_evals/gdm_self_reasoning_context_length_mod_irreversibility_only",
+  "n": 2,
+  "epochs": "10",
+  "flags": []
+ },
+ {
+  "task": "inspect_evals/gdm_self_reasoning_database_tool",
+  "n": 2,
+  "epochs": "10",
+  "flags": []
+ },
+ {
+  "task": "inspect_evals/gdm_self_reasoning_latency_calculator",
+  "n": 2,
+  "epochs": "10",
+  "flags": []
+ },
+ {
+  "task": "inspect_evals/gdm_self_reasoning_max_messages_calculator",
+  "n": 2,
+  "epochs": "10",
+  "flags": []
+ },
+ {
+  "task": "inspect_evals/gdm_self_reasoning_max_tokens",
+  "n": 2,
+  "epochs": "10",
+  "flags": []
+ },
+ {
+  "task": "inspect_evals/gdm_self_reasoning_oversight_frequency",
+  "n": 2,
+  "epochs": "10",
+  "flags": []
+ },
+ {
+  "task": "inspect_evals/gdm_self_reasoning_read_logs",
+  "n": 2,
+  "epochs": "10",
+  "flags": []
+ },
+ {
+  "task": "inspect_evals/gdm_self_reasoning_turn_off_filters",
+  "n": 2,
+  "epochs": "10",
+  "flags": []
+ },
+ {
+  "task": "inspect_evals/gdm_sp03_milestones",
+  "n": 3,
+  "epochs": "1",
+  "flags": [
+   "identical inputs (1 repeated, max 3)"
+  ]
+ },
+ {
+  "task": "inspect_evals/gdm_sp04_milestones",
+  "n": 3,
+  "epochs": "1",
+  "flags": [
+   "identical inputs (1 repeated, max 3)"
+  ]
+ },
+ {
+  "task": "inspect_evals/gdm_sp08_milestones",
+  "n": 7,
+  "epochs": "1",
+  "flags": [
+   "identical inputs (1 repeated, max 7)"
+  ]
+ },
+ {
+  "task": "inspect_evals/gdm_sp09_milestones",
+  "n": 5,
+  "epochs": "1",
+  "flags": [
+   "identical inputs (1 repeated, max 5)"
+  ]
+ },
+ {
+  "task": "inspect_evals/gdm_sp12_milestones",
+  "n": 4,
+  "epochs": "1",
+  "flags": [
+   "identical inputs (1 repeated, max 4)"
+  ]
+ },
+ {
+  "task": "inspect_evals/gdpval",
+  "n": 220,
+  "epochs": "None",
+  "flags": [
+   "meta[occupation] (44 values, max 5, 44 repeated)"
+  ]
+ },
+ {
+  "task": "inspect_evals/gpqa_diamond",
+  "n": 198,
+  "epochs": "4",
+  "flags": []
+ },
+ {
+  "task": "inspect_evals/gsm8k",
+  "n": 1319,
+  "epochs": "None",
+  "flags": []
+ },
+ {
+  "task": "inspect_evals/hellaswag",
+  "n": 10042,
+  "epochs": "None",
+  "flags": [
+   "shared text block (21 blocks repeated, max 3)",
+   "identical inputs (23 repeated, max 3)",
+   "meta[source_id] (8407 values, max 10, 902 repeated)"
+  ]
+ },
+ {
+  "task": "inspect_evals/humaneval",
+  "n": 164,
+  "epochs": "None",
+  "flags": [
+   "meta[entry_point] (158 values, max 2, 6 repeated)"
+  ]
+ },
+ {
+  "task": "inspect_evals/infinite_bench_code_debug",
+  "n": 394,
+  "epochs": "None",
+  "flags": [
+   "shared text block (91 blocks repeated, max 6)"
+  ]
+ },
+ {
+  "task": "inspect_evals/infinite_bench_code_run",
+  "n": 400,
+  "epochs": "None",
+  "flags": []
+ },
+ {
+  "task": "inspect_evals/infinite_bench_kv_retrieval",
+  "n": 500,
+  "epochs": "None",
+  "flags": []
+ },
+ {
+  "task": "inspect_evals/infinite_bench_longbook_choice_eng",
+  "n": 229,
+  "epochs": "None",
+  "flags": [
+   "shared text block (58 blocks repeated, max 4)"
+  ]
+ },
+ {
+  "task": "inspect_evals/infinite_bench_longdialogue_qa_eng",
+  "n": 200,
+  "epochs": "None",
+  "flags": [
+   "shared text block (58 blocks repeated, max 4)"
+  ]
+ },
+ {
+  "task": "inspect_evals/infinite_bench_math_calc",
+  "n": 50,
+  "epochs": "None",
+  "flags": []
+ },
+ {
+  "task": "inspect_evals/infinite_bench_math_find",
+  "n": 350,
+  "epochs": "None",
+  "flags": []
+ },
+ {
+  "task": "inspect_evals/infinite_bench_number_string",
+  "n": 590,
+  "epochs": "None",
+  "flags": []
+ },
+ {
+  "task": "inspect_evals/infinite_bench_passkey",
+  "n": 590,
+  "epochs": "None",
+  "flags": []
+ },
+ {
+  "task": "inspect_evals/lab_bench_cloning_scenarios",
+  "n": 33,
+  "epochs": "1",
+  "flags": []
+ },
+ {
+  "task": "inspect_evals/lab_bench_dbqa",
+  "n": 520,
+  "epochs": "1",
+  "flags": [
+   "shared text block (42 blocks repeated, max 7)",
+   "identical inputs (60 repeated, max 48)"
+  ]
+ },
+ {
+  "task": "inspect_evals/lab_bench_figqa",
+  "n": 181,
+  "epochs": "1",
+  "flags": [
+   "shared images (107 images for 181 samples, max 3)"
+  ]
+ },
+ {
+  "task": "inspect_evals/lab_bench_litqa",
+  "n": 199,
+  "epochs": "1",
+  "flags": []
+ },
+ {
+  "task": "inspect_evals/lab_bench_protocolqa",
+  "n": 108,
+  "epochs": "1",
+  "flags": [
+   "shared text block (6 blocks repeated, max 9)"
+  ]
+ },
+ {
+  "task": "inspect_evals/lab_bench_seqqa",
+  "n": 600,
+  "epochs": "1",
+  "flags": [
+   "shared text block (3 blocks repeated, max 2)",
+   "identical inputs (4 repeated, max 40)"
+  ]
+ },
+ {
+  "task": "inspect_evals/lab_bench_suppqa",
+  "n": 82,
+  "epochs": "1",
+  "flags": []
+ },
+ {
+  "task": "inspect_evals/lab_bench_tableqa",
+  "n": 244,
+  "epochs": "1",
+  "flags": []
+ },
+ {
+  "task": "inspect_evals/lingoly_too",
+  "n": 1203,
+  "epochs": "None",
+  "flags": [
+   "shared text block (288 blocks repeated, max 42)",
+   "meta[obfuscated_question_n] (570 values, max 6, 416 repeated)",
+   "meta[overall_question_n] (82 values, max 42, 82 repeated)"
+  ]
+ },
+ {
+  "task": "inspect_evals/macbench",
+  "n": 1153,
+  "epochs": "None",
+  "flags": [
+   "shared images (552 images for 1153 samples, max 8)",
+   "shared text block (20 blocks repeated, max 311)",
+   "identical inputs (37 repeated, max 42)"
+  ]
+ },
+ {
+  "task": "inspect_evals/math",
+  "n": 5000,
+  "epochs": "None",
+  "flags": [
+   "shared text block (3 blocks repeated, max 2)"
+  ]
+ },
+ {
+  "task": "inspect_evals/mathvista",
+  "n": 1000,
+  "epochs": "None",
+  "flags": [
+   "shared text block (12 blocks repeated, max 9)",
+   "identical inputs (40 repeated, max 44)"
+  ]
+ },
+ {
+  "task": "inspect_evals/mbpp",
+  "n": 257,
+  "epochs": "5",
+  "flags": [
+   "identical inputs (1 repeated, max 2)"
+  ]
+ },
+ {
+  "task": "inspect_evals/medqa",
+  "n": 1273,
+  "epochs": "None",
+  "flags": []
+ }
+]
