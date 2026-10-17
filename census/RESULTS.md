@@ -75,13 +75,22 @@ across 244 samples, so none are shared.
 
 _Corrected 2026-10-12: the BBQ row originally counted only contexts of 200+ characters (29,088). Grouping on the full scenario text (verified at `12d04e0`), every sample is clustered: 14,102 scenarios, each ambiguous context plus its disambiguations, max 20._
 
-**BBQ grouping definition (added 2026-10-16).** The census key is the *ambiguous context*: it plus every
-disambiguated context that extends it. That gives 14,102 groups (13,821 of size 4; the rest 8–20).
-An alternative key, category + ambiguous context + answer information (proposed in
-[#1](https://github.com/raina-sid/inspect-evals-uncertainty/issues/1)), gives 14,603 groups, splitting 281
-of ours. In all 281, every item shares the same ambiguous context and the same two questions. In 271, the
-ambiguous items in the split blocks are identical except for the wording of the "unknown" option
-("Can't be determined" vs "Cannot be determined"). The blocks otherwise differ in the disambiguated sentence,
-i.e. counterbalanced versions of one scenario. 2 groups span two categories. We use the context-level key
-as the primary cluster and the finer key as a sensitivity check. The dataset has 78 exact duplicate rows
-(identical input, choices, target and answer metadata), all included, because the inspect port evaluates them.
+**BBQ grouping definition (added 2026-10-16; corrected 2026-10-17).** The census key is the
+*ambiguous context*: it plus every disambiguated context that extends it. That gives 14,102 groups
+(13,821 of size 4; the other 281 have 8–20 items). An alternative key, category + ambiguous context +
+answer information (proposed in [#1](https://github.com/raina-sid/inspect-evals-uncertainty/issues/1)),
+gives 14,603 groups.
+
+It splits **278** of our larger groups. The other 3 are groups of 8 made of a duplicated block, which
+both keys keep together: Disability_status 00892–00895 / 00956–00959, SES 01920–01923 / 02060–02063,
+SES 02024–02027 / 02116–02119.
+
+In all 278 split groups, every item shares the same ambiguous context and the same two questions. In 268,
+the ambiguous items in the split blocks are identical except for the wording of the "unknown" option
+("Can't be determined" vs "Cannot be determined"); the blocks otherwise differ in the disambiguated
+sentence, i.e. counterbalanced versions of one scenario. 2 span two categories.
+
+We use the context-level key as the primary cluster and the finer key as a sensitivity check. Duplicates:
+78 rows match on prompt content; 76 if the full record is compared. The two extra pairs differ only in
+`additional_metadata.version` (Disability_status 00892/00956 and 00894/00958). All rows are kept, because
+the inspect port evaluates them. Reconciled with @GBX-Max1220 in #1.
